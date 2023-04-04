@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My first webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+
+  
+
+  <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+
+  <body>
+    <header class="header">Simply Manney<header>
+    <h1 class="name">My name is Mannety</h1>
+    <p>Home made perfume</p>
+
+
+    
+<p class="greentext">At Simply Manney we make different frangrance families,perfumes made from natural ingredients.</p>
+    
+    <h2>About me</h2>
+
+    <p>My hobbies</p>
+    <ul  style="list-style-type:none;">
+      <li>Coding</li>
+      <li>Leaning</li>
+      <li>Make perfumes</li>
+    
+    </ul>
+
+    
+
+    <h3>Top 5 families of my home made perfumes</h3>
+    <ul style="list-style-type:none;">
+      <li>Floral fragrance</li>
+      <li>Fruity fragrance</li>
+      <li>Woody fragrance</li>
+      <li>Oriental fragrance</li>
+      <li>Green fragrance</li>
+    </ul>
+
+    <div> 
+      <img class="img-perfume" src="img/perf.jpg" alt="" >
+      <img class="img-perfume" src="img/coco.jpg" alt="" >
+      <img class="img-perfume" src="img/chanel.jpg" alt="" >
+    </div>
+
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="/w3images/map.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+            
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    
+  </body>
+</html>
+<footer>
+  <p>Owner: Mannety Mowa</p>
+  <p><a href="mannetyagape@gmailcom">mannetyagape@gmail.com</a></p>
+</footer>
